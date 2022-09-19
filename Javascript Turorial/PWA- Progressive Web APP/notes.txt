@@ -1,0 +1,20 @@
+1) Service worker is a js file, which keeps running independent from main react application, it is ued to handle how app works in offline mode, push notifications, cache pages and data.
+2) PWA should only run https protocol as service worker are always running, thus it can cause security concern
+3) Manifest.json contains an array of logo images and help us to make application installable
+4) PWA can be stored in PWA stores.
+
+Service Worker:
+ServiceWorker,js file should be created in root folder to control all the files in that folder, if e create it in some other folder suppose 
+/img then lifecycle of that service worker would be only in that folder
+it usually has 3 parts ,using enevent listener
+
+SeviceWorker can only work when protocol is https , localhost is exception to develop app. https is required because service worker is very powerful and might create security issues.
+
+1) addEventlistener( 'Install') : this is used to install statich cache using addAll, we can store array of data in cache
+
+2) addEventlistener( 'Activate'): this part is used to update cache from old version
+
+3) addEventlistener( 'fetch') : 
+a)this part serves as an intermediate between browser and request, if request is in cache it return cache data respondWith event.request
+b) we can also update cahce dynamically here based on last page visited by the user
+c) we can also send offline fallback back here if user is offline.
