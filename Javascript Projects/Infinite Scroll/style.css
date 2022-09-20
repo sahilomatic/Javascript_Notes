@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 5rem 10rem;
+  background-color: aqua;
+}
+
+.container {
+  min-width: 20rem;
+  margin: auto;
+  width: 70vh;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 5rem;
+  width: 100%;
+}
+
+.container .posts {
+  background: rgb(156, 156, 243);
+  margin-top: 5rem;
+  padding: 2rem 5rem;
+  border-radius: 15rem;
+  box-shadow: black;
+  margin-bottom: 1rem;
+}
+
+.post-id {
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  display: grid; /* if only 1 item instead of flex we can use grid*/
+  place-items: center;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
