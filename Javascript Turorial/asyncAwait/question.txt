@@ -1,2 +1,0 @@
-if two await statements are in same line, then take time of max duration function,
-if await statements are in different lines , then take time individually as it will wait to move to next line.
